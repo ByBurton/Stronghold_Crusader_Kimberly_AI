@@ -1,2 +1,2 @@
-# SC_AI_Characters
-Custom made AI characters for Stronghold Crusader.
+# An in - progress custom campaign
+Made by me
