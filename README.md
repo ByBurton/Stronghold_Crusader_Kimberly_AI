@@ -1,2 +1,2 @@
-# An in - progress custom campaign
-Made by me
+# An in - progress complete overhaul of all 16 AI Lords in Stronghold Crusader
+~WIP~
