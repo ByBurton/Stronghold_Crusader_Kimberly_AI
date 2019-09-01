@@ -1,2 +1,2 @@
-# An in - progress complete overhaul of all 16 AI Lords in Stronghold Crusader
+# An in - progress complete overwrite of all 16 existing vanilla AI lords with my own
 ~WIP~
