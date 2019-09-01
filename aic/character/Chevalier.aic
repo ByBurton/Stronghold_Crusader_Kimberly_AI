@@ -285,11 +285,11 @@ AICharacter
 		RecruitInterval	= 2
 		RecruitIntervalWeak	= 1
 		RecruitIntervalStrong	= 3
-		DefTotal	= 1000
-		OuterPatrolGroupsCount	= 1
+		DefTotal	= 777
+		OuterPatrolGroupsCount	= 2
 		OuterPatrolGroupsMove	= True
 		OuterPatrolRallyDelay	= 36
-		DefWalls	= 666
+		DefWalls	= 555
 		DefUnit1	= Crossbowman
 		DefUnit2	= Crossbowman
 		DefUnit3	= Crossbowman
@@ -318,9 +318,9 @@ AICharacter
 		HarassingSiegeEngine8	= None
 		HarassingSiegeEnginesMax	= 9
 		Unknown124	= 5
-		AttForceBase	= 666
+		AttForceBase	= 333
 		AttForceRandom	= 69
-		AttForceSupportAllyThreshold	= 666
+		AttForceSupportAllyThreshold	= 333
 		AttForceRallyPercentage	= 66
 		Unknown129	= 100
 		Unknown130	= 12
