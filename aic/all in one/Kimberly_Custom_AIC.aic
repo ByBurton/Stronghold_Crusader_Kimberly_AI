@@ -2894,7 +2894,7 @@ AICharacter
 		TaxesMax	= 12
 		Unknown011	= 10
 		Farm1	= WheatFarm
-		Farm2	= HopsFarm
+		Farm2	= HopFarm
 		Farm3	= WheatFarm
 		Farm4	= WheatFarm
 		Farm5	= WheatFarm
