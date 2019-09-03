@@ -295,9 +295,9 @@ AICharacter
 		DefUnit3	= ArabArcher
 		DefUnit4	= ArabArcher
 		DefUnit5	= ArabSwordsman
-		DefUnit6	= Slinger
+		DefUnit6	= ArabArcher
 		DefUnit7	= ArabSwordsman
-		DefUnit8	= ArabArcher
+		DefUnit8	= Slinger
 		RaidUnitsBase	= 0
 		RaidUnitsRandom	= 0
 		RaidUnit1	= ArabSwordsman
@@ -348,12 +348,12 @@ AICharacter
 		AttUnitPatrolMax	= 250
 		AttUnitPatrolGroupsCount	= 1
 		AttUnitBackup	= ArabSwordsman
-		AttUnitBackupMax	= 25
+		AttUnitBackupMax	= 45
 		RangedBackupGroupsCount	= 1
 		AttUnitEngage	= ArabSwordsman
 		AttUnitEngageMax	= 750
 		AttUnitSiegeDef	= ArabSwordsman
-		AttUnitSiegeDefMax	= 25
+		AttUnitSiegeDefMax	= 30
 		Unknown161	= 0
 		AttUnitMain1	= ArabSwordsman
 		AttUnitMain2	= None
@@ -364,4 +364,3 @@ AICharacter
 		TargetChoice	= Player
 	}
 }
-
