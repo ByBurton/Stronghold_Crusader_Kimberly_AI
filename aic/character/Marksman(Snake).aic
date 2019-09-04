@@ -186,6 +186,7 @@ AICharacter
 }
 */
 
+//Marksman AI
 AICharacter
 {
 	Index	= 2
@@ -198,7 +199,7 @@ AICharacter
 		Unknown003	= 0
 		Unknown004	= 1
 		Unknown005	= 1
-		CriticalPopularity	= 4000
+		CriticalPopularity	= 4500
 		LowestPopularity	= 9000
 		HighestPopularity	= 10000
 		TaxesMin	= 3
@@ -275,20 +276,20 @@ AICharacter
 		RecruitProbAttackDefault	= 20
 		RecruitProbAttackWeak	= 5
 		RecruitProbAttackStrong	= 40
-		SortieUnitRangedMin	= 50
+		SortieUnitRangedMin	= 5
 		SortieUnitRanged	= Crossbowman
-		SortieUnitMeleeMin	= 200
+		SortieUnitMeleeMin	= 50
 		SortieUnitMelee	= Crossbowman
 		DefDiggingUnitMax	= 25
 		DefDiggingUnit	= Engineer
 		RecruitInterval	= 1
 		RecruitIntervalWeak	= 1
 		RecruitIntervalStrong	= 1
-		DefTotal	= 4500
+		DefTotal	= 4600
 		OuterPatrolGroupsCount	= 4
 		OuterPatrolGroupsMove	= True
 		OuterPatrolRallyDelay	= 5
-		DefWalls	= 500
+		DefWalls	= 400
 		DefUnit1	= Crossbowman
 		DefUnit2	= Crossbowman
 		DefUnit3	= Crossbowman
@@ -315,7 +316,7 @@ AICharacter
 		HarassingSiegeEngine6	= None
 		HarassingSiegeEngine7	= None
 		HarassingSiegeEngine8	= None
-		HarassingSiegeEnginesMax	= 7
+		HarassingSiegeEnginesMax	= 9
 		Unknown124	= 4
 		AttForceBase	= 500
 		AttForceRandom	= 0
@@ -337,30 +338,29 @@ AICharacter
 		Unknown142	= 0
 		AttMaxEngineers	= 28
 		AttDiggingUnit	= Engineer
-		AttDiggingUnitMax	= 10
+		AttDiggingUnitMax	= 12
 		AttUnit2	= None
 		AttUnit2Max	= 0
 		AttMaxAssassins	= 2000
 		AttMaxLaddermen	= 0
 		AttMaxTunnelers	= 0
 		AttUnitPatrol	= Crossbowman
-		AttUnitPatrolMax	= 5000
+		AttUnitPatrolMax	= 9999
 		AttUnitPatrolGroupsCount	= 0
-		AttUnitBackup	= Crossbowman
+		AttUnitBackup	= ArabArcher
 		AttUnitBackupMax	= 100
 		RangedBackupGroupsCount	= 2
 		AttUnitEngage	= Assassin
 		AttUnitEngageMax	= 1000
 		AttUnitSiegeDef	= ArabArcher
-		AttUnitSiegeDefMax	= 50
+		AttUnitSiegeDefMax	= 0
 		Unknown161	= 1
-		AttUnitMain1	= Crossbowman
-		AttUnitMain2	= Crossbowman
-		AttUnitMain3	= Crossbowman
-		AttUnitMain4	= ArabArcher
+		AttUnitMain1	= None
+		AttUnitMain2	= None
+		AttUnitMain3	= None
+		AttUnitMain4	= None
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 3
 		TargetChoice	= Player
 	}
 }
-
