@@ -1,0 +1,366 @@
+AIFileHeader
+{
+	DescrGer	= 
+	DescrEng	= 
+	DescrPol	= 
+	DescrRus	= 
+}
+
+/*
+AICharacter
+{
+	Index:	Int32
+	Name:	String
+	Personality:	AIPersonality
+	{
+		Unknown000:	Int32
+		Unknown001:	Int32
+		Unknown002:	Int32
+		Unknown003:	Int32
+		Unknown004:	Int32
+		Unknown005:	Int32
+		CriticalPopularity:	Int32,	Values range from 0 to 10000, where 100 popularity equals 10000. Below this value, the AI sells more stuff than usual to get money.
+		LowestPopularity:	Int32,	Below this value the AI sets taxes to zero until it reaches 'HighestPopularity' again.
+		HighestPopularity:	Int32,	Above this value the AI sets taxes back up
+		TaxesMin:	Int32,	Ranging from 0 (being +7 gifts) to 11 (being -24 taxes)
+		TaxesMax:	Int32,	Ranging from 0 (being +7 gifts) to 11 (being -24 taxes)
+		Unknown011:	Int32
+		Farm1:	FarmBuilding,	An array of farm slots, which the AI builds in the given sequence.
+		Farm2:	FarmBuilding
+		Farm3:	FarmBuilding
+		Farm4:	FarmBuilding
+		Farm5:	FarmBuilding
+		Farm6:	FarmBuilding
+		Farm7:	FarmBuilding
+		Farm8:	FarmBuilding
+		PopulationPerFarm:	Int32,	The AI builds one farm for each amount of this population value. (Also check MaxFarms)
+		PopulationPerWoodcutter:	Int32
+		PopulationPerQuarry:	Int32
+		PopulationPerIronmine:	Int32
+		PopulationPerPitchrig:	Int32
+		MaxQuarries:	Int32,	Setting this to zero will not disable building! Set PopulationPerQuarry to zero instead!
+		MaxIronmines:	Int32,	Setting this to zero will not disable building! Set PopulationPerIronmine to zero instead!
+		MaxWoodcutters:	Int32,	Setting this to zero will not disable building! Set PopulationPerWoodcutter to zero instead!
+		MaxPitchrigs:	Int32,	Setting this to zero will not disable building! Set PopulationPerPitchrig to zero instead!
+		MaxFarms:	Int32,	Setting this to zero will not disable building! Set PopulationPerFarm to zero instead!
+		BuildInterval:	Int32,	This is only considered <= 5000 gold
+		ResourceRebuildDelay:	Int32,	The delay before the AI rebuilds destroyed buildings.
+		MaxFood:	Int32,	Includes wheat. Applies to each kind of food.
+		MinimumApples:	Int32,	Reserves that are only consumed if current popularity < LowestPopularity. If the AI has less than this amount it will prioritize buying the missing food.
+		MinimumCheese:	Int32,	Reserves that are only consumed if current popularity < LowestPopularity. If the AI has less than this amount it will prioritize buying the missing food.
+		MinimumBread:	Int32,	Reserves that are only consumed if current popularity < LowestPopularity. If the AI has less than this amount it will prioritize buying the missing food.
+		MinimumWheat:	Int32
+		MinimumHop:	Int32,	Unclear
+		TradeAmountFood:	Int32
+		TradeAmountEquipment:	Int32
+		Unknown040:	Int32
+		MinimumGoodsRequiredAfterTrade:	Int32,	If the AI would have less than this amount of a good after sending them it won't send them to the requesting player.
+		DoubleRationsFoodThreshold:	Int32,	Above this value of food the AI will give double rations out.
+		MaxWood:	Int32
+		MaxStone:	Int32
+		MaxResourceOther:	Int32
+		MaxEquipment:	Int32,	Applies to each type of weapon or armour.
+		MaxBeer:	Int32
+		MaxResourceVariance:	Int32,	added to all max resource values?
+		RecruitGoldThreshold:	Int32,	A (gold) threshold which disables any recruitment of all units except for raiding and sortie until it is met.
+		BlacksmithSetting:	BlacksmithSetting
+		FletcherSetting:	FletcherSetting
+		PoleturnerSetting:	PoleturnerSetting
+		SellResource01:	Resource
+		SellResource02:	Resource
+		SellResource03:	Resource
+		SellResource04:	Resource
+		SellResource05:	Resource
+		SellResource06:	Resource
+		SellResource07:	Resource
+		SellResource08:	Resource
+		SellResource09:	Resource
+		SellResource10:	Resource
+		SellResource11:	Resource
+		SellResource12:	Resource
+		SellResource13:	Resource
+		SellResource14:	Resource
+		SellResource15:	Resource
+		DefWallPatrolRallyTime:	Int32,	The amount of time for castle patrols set up in the AIV to move from one rally point to the next. (Remark: Only spearmen, horse archers and macemen currently do)
+		DefWallPatrolGroups:	Int32
+		DefSiegeEngineGoldThreshold:	Int32,	This one makes no sense. In code: [if (Gold + Threshold > 30) then RecruitEngineer()], maybe it was supposed to be minus...
+		DefSiegeEngineBuildDelay:	Int32,	The delay before the AI builds its first defensive siege engine.
+		Unknown072:	Int32
+		Unknown073:	Int32
+		RecruitProbDefDefault:	Int32,	The probability with which this AI reinforces missing defense troops. Note: These are ignored at the beginning of the game, as there are only sortie and defensive units being recruited.
+		RecruitProbDefWeak:	Int32
+		RecruitProbDefStrong:	Int32
+		RecruitProbRaidDefault:	Int32
+		RecruitProbRaidWeak:	Int32
+		RecruitProbRaidStrong:	Int32
+		RecruitProbAttackDefault:	Int32
+		RecruitProbAttackWeak:	Int32
+		RecruitProbAttackStrong:	Int32
+		SortieUnitRangedMin:	Int32,	These units are only sent out if more than this amout of them has already been recruited.
+		SortieUnitRanged:	Unit,	Type of ranged units that go to the last attacked farm or building, and guard it until another is attacked. Setting it to None may cause buggy recruitment behavior.
+		SortieUnitMeleeMin:	Int32,	These units are only sent out if more than this amout of them has already been recruited.
+		SortieUnitMelee:	Unit,	Type of melee units to attack enemy units shooting at the AI's buildings or workers. Setting it to None may cause buggy recruitment behavior.
+		DefDiggingUnitMax:	Int32,	Amount of units that dig own moat.
+		DefDiggingUnit:	DiggingUnit,	Type of unit to dig own moat.
+		RecruitInterval:	Int32
+		RecruitIntervalWeak:	Int32,	The 'weak' state sets in if the AI is completely trashed. F.e. troops < 8, gold < 200, population < 15, ...
+		RecruitIntervalStrong:	Int32,	The 'strong' state sets in if f.e. the AI has troops >= 40, gold >= 200, population >= 40, ...
+		DefTotal:	Int32,	The total count of all defensive units (wall defense + patrols).
+		OuterPatrolGroupsCount:	Int32,	The number of groups the patrols defending the outer economy split into.
+		OuterPatrolGroupsMove:	Boolean,	Whether the patrols stay at one place (quarry) or move around.
+		OuterPatrolRallyDelay:	Int32,	The delay after which the AI sends out patrols to defend the outer economy. 4 is approximately one month, 24 being half a year.
+		DefWalls:	Int32
+		DefUnit1:	Unit
+		DefUnit2:	Unit
+		DefUnit3:	Unit
+		DefUnit4:	Unit
+		DefUnit5:	Unit
+		DefUnit6:	Unit
+		DefUnit7:	Unit
+		DefUnit8:	Unit
+		RaidUnitsBase:	Int32,	Base amount of raid troops, Special case: [unknown trigger => end result multiplied by 1.25]
+		RaidUnitsRandom:	Int32,	Maximum random addition to raid troops. Special cases: [gold > 5000 => multiplied by 2][gold < 1000 => set to 0][enemy gold < 500 => divided by -2]
+		RaidUnit1:	Unit
+		RaidUnit2:	Unit
+		RaidUnit3:	Unit
+		RaidUnit4:	Unit
+		RaidUnit5:	Unit
+		RaidUnit6:	Unit
+		RaidUnit7:	Unit
+		RaidUnit8:	Unit
+		HarassingSiegeEngine1:	HarassingSiegeEngine
+		HarassingSiegeEngine2:	HarassingSiegeEngine
+		HarassingSiegeEngine3:	HarassingSiegeEngine
+		HarassingSiegeEngine4:	HarassingSiegeEngine
+		HarassingSiegeEngine5:	HarassingSiegeEngine
+		HarassingSiegeEngine6:	HarassingSiegeEngine
+		HarassingSiegeEngine7:	HarassingSiegeEngine
+		HarassingSiegeEngine8:	HarassingSiegeEngine
+		HarassingSiegeEnginesMax:	Int32,	The maximum of harassing siege engines an AI builds.
+		Unknown124:	Int32
+		AttForceBase:	Int32,	The base amount of troops with which this AI attacks
+		AttForceRandom:	Int32,	The maximum random amount of additional troops in an attack (this is not the amount by which the troops increase per attack!)
+		AttForceSupportAllyThreshold:	Int32,	If the AI has more than this amount of units in the attack force, it will help their allies or siege an enemy if commanded to do so.
+		AttForceRallyPercentage:	Int32,	The %-amount of units of the attack force that the AI will rally before attacking. (0 - 100)
+		Unknown129:	Int32
+		Unknown130:	Int32
+		Unknown131:	Int32
+		Unknown132:	Int32
+		SiegeEngine1:	SiegeEngine
+		SiegeEngine2:	SiegeEngine
+		SiegeEngine3:	SiegeEngine
+		SiegeEngine4:	SiegeEngine
+		SiegeEngine5:	SiegeEngine
+		SiegeEngine6:	SiegeEngine
+		SiegeEngine7:	SiegeEngine
+		SiegeEngine8:	SiegeEngine
+		CowThrowInterval:	Int32,	The amount of stones needed to be thrown until the AI throws a diseased cow instead (catapults & trebuchets). Value 0 disables cows and -1 makes the AI not throw any bolders, only cows.
+		Unknown142:	Int32
+		AttMaxEngineers:	Int32
+		AttDiggingUnit:	DiggingUnit,	This unit is only recruited if the target enemy has moat and used preferably to fill up enemy moat.
+		AttDiggingUnitMax:	Int32
+		AttUnit2:	Unit
+		AttUnit2Max:	Int32
+		AttMaxAssassins:	Int32
+		AttMaxLaddermen:	Int32
+		AttMaxTunnelers:	Int32
+		AttUnitPatrol:	Unit,	Ranged attack unit that patrols around the enemy castle / keep. Preferably ranged units should be used here.
+		AttUnitPatrolMax:	Int32
+		AttUnitPatrolGroupsCount:	Int32,	# of groups the AttUnitPatrol split into. BUGGY! More than 1 group results to only a single group attacking, the others standing idle.
+		AttUnitBackup:	Unit,	Attacking unit that holds position and doesn't attack until the walls are breached.
+		AttUnitBackupMax:	Int32
+		RangedBackupGroupsCount:	Int32,	# of groups the RangedBackupUnits split into. If shields are present in the army, one will be added to each group (if possible).
+		AttUnitEngage:	Unit,	Units that engage enemy groups of units outside the castle. Prioritizes larger groups no matter where they are on the map. Otherwise destroys buildings outside the castle.
+		AttUnitEngageMax:	Int32
+		AttUnitSiegeDef:	Unit,	These units patrol between siege engines in order to protect them.
+		AttUnitSiegeDefMax:	Int32
+		Unknown161:	Int32
+		AttUnitMain1:	Unit,	AttUntiMain1 to AttUnitMain4 is a list of the main strike force the AI recruits for sieges. Priotizes in order of the list, but only recruits units for which they have enough gold. So try to place expensive units higher up.
+		AttUnitMain2:	Unit
+		AttUnitMain3:	Unit
+		AttUnitMain4:	Unit
+		AttMaxDefault:	Int32,	This does nothing
+		AttMainGroupsCount:	Int32,	# of groups all the AttUnitMain split into. Maximum is 3
+		TargetChoice:	TargetingType
+	}
+}
+*/
+
+//Richard AI
+AICharacter
+{
+	Index	= 8
+	Name	= Richard
+	Personality
+	{
+		Unknown000	= 13
+		Unknown001	= 0
+		Unknown002	= 0
+		Unknown003	= 0
+		Unknown004	= 1
+		Unknown005	= 1
+		CriticalPopularity	= 6500
+		LowestPopularity	= 8000
+		HighestPopularity	= 10000
+		TaxesMin	= 0
+		TaxesMax	= 12
+		Unknown011	= 12
+		Farm1	= DairyFarm
+		Farm2	= AppleFarm
+		Farm3	= AppleFarm
+		Farm4	= AppleFarm
+		Farm5	= None
+		Farm6	= None
+		Farm7	= None
+		Farm8	= None
+		PopulationPerFarm	= 5
+		PopulationPerWoodcutter	= 1
+		PopulationPerQuarry	= 9
+		PopulationPerIronmine	= 9
+		PopulationPerPitchrig	= 25
+		MaxQuarries	= 2
+		MaxIronmines	= 10
+		MaxWoodcutters	= 7
+		MaxPitchrigs	= 2
+		MaxFarms	= 11
+		BuildInterval	= 6
+		ResourceRebuildDelay	= 20
+		MaxFood	= 100
+		MinimumApples	= 25
+		MinimumCheese	= 5
+		MinimumBread	= -1
+		MinimumWheat	= -1
+		MinimumHop	= 5
+		TradeAmountFood	= 5
+		TradeAmountEquipment	= 4
+		Unknown040	= 20
+		MinimumGoodsRequiredAfterTrade	= 20
+		DoubleRationsFoodThreshold	= 300
+		MaxWood	= 100
+		MaxStone	= 35
+		MaxResourceOther	= 5
+		MaxEquipment	= 14
+		MaxBeer	= -1
+		MaxResourceVariance	= 3
+		RecruitGoldThreshold	= 400
+		BlacksmithSetting	= Swords
+		FletcherSetting	= Bows
+		PoleturnerSetting	= Pikes
+		SellResource01	= None
+		SellResource02	= None
+		SellResource03	= None
+		SellResource04	= Hop
+		SellResource05	= Wheat
+		SellResource06	= Beer
+		SellResource07	= Flour
+		SellResource08	= None
+		SellResource09	= Crossbows
+		SellResource10	= Spears
+		SellResource11	= None
+		SellResource12	= Maces
+		SellResource13	= None
+		SellResource14	= LeatherArmors
+		SellResource15	= None
+		DefWallPatrolRallyTime	= 12
+		DefWallPatrolGroups	= 4
+		DefSiegeEngineGoldThreshold	= -50
+		DefSiegeEngineBuildDelay	= 60
+		Unknown072	= 100
+		Unknown073	= 20
+		RecruitProbDefDefault	= 25
+		RecruitProbDefWeak	= 50
+		RecruitProbDefStrong	= 12
+		RecruitProbRaidDefault	= 5
+		RecruitProbRaidWeak	= 5
+		RecruitProbRaidStrong	= 13
+		RecruitProbAttackDefault	= 70
+		RecruitProbAttackWeak	= 45
+		RecruitProbAttackStrong	= 75
+		SortieUnitRangedMin	= 7
+		SortieUnitRanged	= EuropArcher
+		SortieUnitMeleeMin	= 4
+		SortieUnitMelee	= Knight
+		DefDiggingUnitMax	= 0
+		DefDiggingUnit	= None
+		RecruitInterval	= 1
+		RecruitIntervalWeak	= 1
+		RecruitIntervalStrong	= 1
+		DefTotal	= 400
+		OuterPatrolGroupsCount	= 3
+		OuterPatrolGroupsMove	= True
+		OuterPatrolRallyDelay	= 12
+		DefWalls	= 340
+		DefUnit1	= EuropArcher
+		DefUnit2	= EuropArcher
+		DefUnit3	= Pikeman
+		DefUnit4	= EuropArcher
+		DefUnit5	= Swordsman
+		DefUnit6	= EuropArcher
+		DefUnit7	= EuropArcher
+		DefUnit8	= Knight
+		RaidUnitsBase	= 12
+		RaidUnitsRandom	= 16
+		RaidUnit1	= EuropArcher
+		RaidUnit2	= None
+		RaidUnit3	= None
+		RaidUnit4	= None
+		RaidUnit5	= None
+		RaidUnit6	= None
+		RaidUnit7	= None
+		RaidUnit8	= None
+		HarassingSiegeEngine1	= Catapult
+		HarassingSiegeEngine2	= None
+		HarassingSiegeEngine3	= None
+		HarassingSiegeEngine4	= None
+		HarassingSiegeEngine5	= None
+		HarassingSiegeEngine6	= None
+		HarassingSiegeEngine7	= None
+		HarassingSiegeEngine8	= None
+		HarassingSiegeEnginesMax	= 9
+		Unknown124	= 5
+		AttForceBase	= 29
+		AttForceRandom	= 7
+		AttForceSupportAllyThreshold	= 100
+		AttForceRallyPercentage	= 33
+		Unknown129	= 100
+		Unknown130	= 12
+		Unknown131	= 5
+		Unknown132	= 50
+		SiegeEngine1	= Shield
+		SiegeEngine2	= Catapult
+		SiegeEngine3	= Catapult
+		SiegeEngine4	= Trebuchet
+		SiegeEngine5	= Trebuchet
+		SiegeEngine6	= SiegeTower
+		SiegeEngine7	= BatteringRam
+		SiegeEngine8	= BatteringRam
+		CowThrowInterval	= 44
+		Unknown142	= 0
+		AttMaxEngineers	= 25
+		AttDiggingUnit	= Pikeman
+		AttDiggingUnitMax	= 22
+		AttUnit2	= Pikeman
+		AttUnit2Max	= 22
+		AttMaxAssassins	= 0
+		AttMaxLaddermen	= 2
+		AttMaxTunnelers	= 6
+		AttUnitPatrol	= EuropArcher
+		AttUnitPatrolMax	= 1000
+		AttUnitPatrolGroupsCount	= 1
+		AttUnitBackup	= EuropArcher
+		AttUnitBackupMax	= 100
+		RangedBackupGroupsCount	= 1
+		AttUnitEngage	= Knight
+		AttUnitEngageMax	= 4
+		AttUnitSiegeDef	= Swordsman
+		AttUnitSiegeDefMax	= 100
+		Unknown161	= 1
+		AttUnitMain1	= Pikeman
+		AttUnitMain2	= Swordsman
+		AttUnitMain3	= Swordsman
+		AttUnitMain4	= Swordsman
+		AttMaxDefault	= 200
+		AttMainGroupsCount	= 1
+		TargetChoice	= Balanced
+	}
+}
