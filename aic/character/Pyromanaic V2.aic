@@ -220,7 +220,7 @@ AICharacter
 		MaxQuarries	= 2
 		MaxIronmines	= 5
 		MaxWoodcutters	= 4
-		MaxPitchrigs	= 32
+		MaxPitchrigs	= 20
 		MaxFarms	= 11
 		BuildInterval	= 1
 		ResourceRebuildDelay	= 10
@@ -262,7 +262,7 @@ AICharacter
 		SellResource15	= IronArmors
 		DefWallPatrolRallyTime	= 3
 		DefWallPatrolGroups	= 4
-		DefSiegeEngineGoldThreshold	= -700
+		DefSiegeEngineGoldThreshold	= -500
 		DefSiegeEngineBuildDelay	= 20
 		Unknown072	= 100
 		Unknown073	= 20
@@ -275,9 +275,9 @@ AICharacter
 		RecruitProbAttackDefault	= 10
 		RecruitProbAttackWeak	= 10
 		RecruitProbAttackStrong	= 20
-		SortieUnitRangedMin	= 25
+		SortieUnitRangedMin	= 3
 		SortieUnitRanged	= FireThrower
-		SortieUnitMeleeMin	= 25
+		SortieUnitMeleeMin	= 28
 		SortieUnitMelee	= FireThrower
 		DefDiggingUnitMax	= 0
 		DefDiggingUnit	= Slave
@@ -291,8 +291,8 @@ AICharacter
 		DefWalls	= 166
 		DefUnit1	= FireThrower
 		DefUnit2	= ArabArcher
-		DefUnit3	= FireThrower
-		DefUnit4	= FireThrower
+		DefUnit3	= Slave
+		DefUnit4	= ArabArcher
 		DefUnit5	= ArabArcher
 		DefUnit6	= FireThrower
 		DefUnit7	= Slave
@@ -345,7 +345,7 @@ AICharacter
 		AttMaxTunnelers	= 0
 		AttUnitPatrol	= HorseArcher
 		AttUnitPatrolMax	= 666
-		AttUnitPatrolGroupsCount	= 0
+		AttUnitPatrolGroupsCount	= 1
 		AttUnitBackup	= FireThrower
 		AttUnitBackupMax	= 66
 		RangedBackupGroupsCount	= 1
@@ -353,7 +353,7 @@ AICharacter
 		AttUnitEngageMax	= 666
 		AttUnitSiegeDef	= FireThrower
 		AttUnitSiegeDefMax	= 66
-		Unknown161	= 1
+		Unknown161	= 3
 		AttUnitMain1	= FireThrower
 		AttUnitMain2	= None
 		AttUnitMain3	= None

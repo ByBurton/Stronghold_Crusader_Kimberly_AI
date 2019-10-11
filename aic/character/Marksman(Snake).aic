@@ -263,7 +263,7 @@ AICharacter
 		SellResource15	= IronArmors
 		DefWallPatrolRallyTime	= 8
 		DefWallPatrolGroups	= 2
-		DefSiegeEngineGoldThreshold	= 200
+		DefSiegeEngineGoldThreshold	= -200
 		DefSiegeEngineBuildDelay	= 4
 		Unknown072	= 200
 		Unknown073	= 30
@@ -282,9 +282,9 @@ AICharacter
 		SortieUnitMelee	= Crossbowman
 		DefDiggingUnitMax	= 25
 		DefDiggingUnit	= Engineer
-		RecruitInterval	= 1
-		RecruitIntervalWeak	= 1
-		RecruitIntervalStrong	= 1
+		RecruitInterval	= 3
+		RecruitIntervalWeak	= 4
+		RecruitIntervalStrong	= 2
 		DefTotal	= 4600
 		OuterPatrolGroupsCount	= 4
 		OuterPatrolGroupsMove	= True

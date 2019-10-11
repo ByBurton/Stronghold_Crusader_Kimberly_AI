@@ -283,9 +283,9 @@ AICharacter
 		SortieUnitMelee	= Slave
 		DefDiggingUnitMax	= 0
 		DefDiggingUnit	= Slave
-		RecruitInterval	= 6
-		RecruitIntervalWeak	= 8
-		RecruitIntervalStrong	= 2
+		RecruitInterval	= 3
+		RecruitIntervalWeak	= 4
+		RecruitIntervalStrong	= 1
 		DefTotal	= 100
 		OuterPatrolGroupsCount	= 2
 		OuterPatrolGroupsMove	= True
@@ -319,8 +319,8 @@ AICharacter
 		HarassingSiegeEngine8	= None
 		HarassingSiegeEnginesMax	= 0
 		Unknown124	= 3
-		AttForceBase	= 50
-		AttForceRandom	= 10
+		AttForceBase	= 100
+		AttForceRandom	= 1000
 		AttForceSupportAllyThreshold	= 1
 		AttForceRallyPercentage	= 5
 		Unknown129	= 100

@@ -269,13 +269,13 @@ AICharacter
 		Unknown073	= 40
 		RecruitProbDefDefault	= 60
 		RecruitProbDefWeak	= 80
-		RecruitProbDefStrong	= 30
+		RecruitProbDefStrong	= 25
 		RecruitProbRaidDefault	= 15
 		RecruitProbRaidWeak	= 20
 		RecruitProbRaidStrong	= 10
 		RecruitProbAttackDefault	= 25
 		RecruitProbAttackWeak	= 0
-		RecruitProbAttackStrong	= 60
+		RecruitProbAttackStrong	= 65
 		SortieUnitRangedMin	= 4
 		SortieUnitRanged	= Crossbowman
 		SortieUnitMeleeMin	= 5
