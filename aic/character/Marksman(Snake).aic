@@ -247,8 +247,8 @@ AICharacter
 		FletcherSetting	= Crossbows
 		PoleturnerSetting	= Spears
 		SellResource01	= None
-		SellResource02	= None
-		SellResource03	= None
+		SellResource02	= Iron
+		SellResource03	= Pitch
 		SellResource04	= Hop
 		SellResource05	= Wheat
 		SellResource06	= Beer
