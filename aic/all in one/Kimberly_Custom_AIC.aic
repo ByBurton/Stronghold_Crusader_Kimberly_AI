@@ -1079,6 +1079,7 @@ AICharacter
 		AttMainGroupsCount	= 2
 		TargetChoice	= Balanced
 	}
+}
 
 //Yin & Yang AI
 AICharacter
@@ -3096,7 +3097,7 @@ AICharacter
 		MinimumCheese	= 5
 		MinimumBread	= -1
 		MinimumWheat	= -1
-		MinimumHop	= 5
+		MinimumHop	= -1
 		TradeAmountFood	= 5
 		TradeAmountEquipment	= 4
 		Unknown040	= 20
