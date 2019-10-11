@@ -269,10 +269,10 @@ AICharacter
 		Unknown073	= 30
 		RecruitProbDefDefault	= 70
 		RecruitProbDefWeak	= 75
-		RecruitProbDefStrong	= 50
+		RecruitProbDefStrong	= 40
 		RecruitProbRaidDefault	= 10
 		RecruitProbRaidWeak	= 20
-		RecruitProbRaidStrong	= 10
+		RecruitProbRaidStrong	= 20
 		RecruitProbAttackDefault	= 20
 		RecruitProbAttackWeak	= 5
 		RecruitProbAttackStrong	= 40
@@ -282,9 +282,9 @@ AICharacter
 		SortieUnitMelee	= Crossbowman
 		DefDiggingUnitMax	= 25
 		DefDiggingUnit	= Engineer
-		RecruitInterval	= 3
-		RecruitIntervalWeak	= 4
-		RecruitIntervalStrong	= 2
+		RecruitInterval	= 4
+		RecruitIntervalWeak	= 5
+		RecruitIntervalStrong	= 3
 		DefTotal	= 4600
 		OuterPatrolGroupsCount	= 4
 		OuterPatrolGroupsMove	= True
