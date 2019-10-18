@@ -186,6 +186,7 @@ AICharacter
 }
 */
 
+
 //Marksman AI
 AICharacter
 {
@@ -319,9 +320,9 @@ AICharacter
 		HarassingSiegeEnginesMax	= 9
 		Unknown124	= 4
 		AttForceBase	= 500
-		AttForceRandom	= 0
+		AttForceRandom	= 50
 		AttForceSupportAllyThreshold	= 50
-		AttForceRallyPercentage	= 80
+		AttForceRallyPercentage	= 50
 		Unknown129	= 100
 		Unknown130	= 5
 		Unknown131	= 8
@@ -338,10 +339,10 @@ AICharacter
 		Unknown142	= 0
 		AttMaxEngineers	= 28
 		AttDiggingUnit	= Engineer
-		AttDiggingUnitMax	= 12
+		AttDiggingUnitMax	= 22
 		AttUnit2	= None
 		AttUnit2Max	= 0
-		AttMaxAssassins	= 2000
+		AttMaxAssassins	= 500
 		AttMaxLaddermen	= 0
 		AttMaxTunnelers	= 0
 		AttUnitPatrol	= Crossbowman
@@ -351,11 +352,11 @@ AICharacter
 		AttUnitBackupMax	= 100
 		RangedBackupGroupsCount	= 2
 		AttUnitEngage	= Assassin
-		AttUnitEngageMax	= 1000
-		AttUnitSiegeDef	= ArabArcher
+		AttUnitEngageMax	= 50
+		AttUnitSiegeDef	= None
 		AttUnitSiegeDefMax	= 0
 		Unknown161	= 1
-		AttUnitMain1	= None
+		AttUnitMain1	= Crossbowman
 		AttUnitMain2	= None
 		AttUnitMain3	= None
 		AttUnitMain4	= None
