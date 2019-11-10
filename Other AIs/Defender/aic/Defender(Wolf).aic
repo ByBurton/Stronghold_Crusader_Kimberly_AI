@@ -253,7 +253,7 @@ AICharacter
 		SellResource06	= Pitch
 		SellResource07	= Flour
 		SellResource08	= None
-		SellResource09	= Bows
+		SellResource09	= None
 		SellResource10	= Spears
 		SellResource11	= None
 		SellResource12	= Maces
