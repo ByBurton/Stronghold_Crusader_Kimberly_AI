@@ -186,8 +186,189 @@ AICharacter
 }
 */
 
+//TEMP
+//Marksman AI
+//Marksman AI
+AICharacter
+{
+	Index	= 2
+	Name	= Snake
+	Personality
+	{
+		Unknown000	= 13
+		Unknown001	= 0
+		Unknown002	= 0
+		Unknown003	= 0
+		Unknown004	= 1
+		Unknown005	= 1
+		CriticalPopularity	= 4500
+		LowestPopularity	= 9000
+		HighestPopularity	= 10000
+		TaxesMin	= 4
+		TaxesMax	= 12
+		Unknown011	= 10
+		Farm1	= DairyFarm
+		Farm2	= AppleFarm
+		Farm3	= DairyFarm
+		Farm4	= AppleFarm
+		Farm5	= DairyFarm
+		Farm6	= AppleFarm
+		Farm7	= DairyFarm
+		Farm8	= AppleFarm
+		PopulationPerFarm	= 1
+		PopulationPerWoodcutter	= 1
+		PopulationPerQuarry	= 1
+		PopulationPerIronmine	= 10
+		PopulationPerPitchrig	= 25
+		MaxQuarries	= 7
+		MaxIronmines	= 4
+		MaxWoodcutters	= 6
+		MaxPitchrigs	= 4
+		MaxFarms	= 20
+		BuildInterval	= 1
+		ResourceRebuildDelay	= 8
+		MaxFood	= 125
+		MinimumApples	= 15
+		MinimumCheese	= 15
+		MinimumBread	= -15
+		MinimumWheat	= -1
+		MinimumHop	= -1
+		TradeAmountFood	= 5
+		TradeAmountEquipment	= 5
+		Unknown040	= 40
+		MinimumGoodsRequiredAfterTrade	= 40
+		DoubleRationsFoodThreshold	= 500
+		MaxWood	= 200
+		MaxStone	= 200
+		MaxResourceOther	= 15
+		MaxEquipment	= 20
+		MaxBeer	= -1
+		MaxResourceVariance	= 5
+		RecruitGoldThreshold	= 650
+		BlacksmithSetting	= Maces
+		FletcherSetting	= Crossbows
+		PoleturnerSetting	= Spears
+		SellResource01	= None
+		SellResource02	= Iron
+		SellResource03	= None
+		SellResource04	= None
+		SellResource05	= None
+		SellResource06	= Bows
+		SellResource07	= Flour
+		SellResource08	= Beer
+		SellResource09	= Hop
+		SellResource10	= Spears
+		SellResource11	= Pikes
+		SellResource12	= Wheat
+		SellResource13	= Swords
+		SellResource14	= Maces
+		SellResource15	= IronArmors
+		DefWallPatrolRallyTime	= 8
+		DefWallPatrolGroups	= 2
+		DefSiegeEngineGoldThreshold	= -650
+		DefSiegeEngineBuildDelay	= 4
+		Unknown072	= 200
+		Unknown073	= 30
+		RecruitProbDefDefault	= 70
+		RecruitProbDefWeak	= 75
+		RecruitProbDefStrong	= 40
+		RecruitProbRaidDefault	= 10
+		RecruitProbRaidWeak	= 20
+		RecruitProbRaidStrong	= 20
+		RecruitProbAttackDefault	= 20
+		RecruitProbAttackWeak	= 5
+		RecruitProbAttackStrong	= 40
+		SortieUnitRangedMin	= 15
+		SortieUnitRanged	= Crossbowman
+		SortieUnitMeleeMin	= 100
+		SortieUnitMelee	= Crossbowman
+		DefDiggingUnitMax	= 25
+		DefDiggingUnit	= Engineer
+		RecruitInterval	= 1
+		RecruitIntervalWeak	= 1
+		RecruitIntervalStrong	= 1
+		DefTotal	= 4600
+		OuterPatrolGroupsCount	= 4
+		OuterPatrolGroupsMove	= True
+		OuterPatrolRallyDelay	= 5
+		DefWalls	= 400
+		DefUnit1	= Crossbowman
+		DefUnit2	= Crossbowman
+		DefUnit3	= Crossbowman
+		DefUnit4	= Assassin
+		DefUnit5	= ArabArcher
+		DefUnit6	= Crossbowman
+		DefUnit7	= Assassin
+		DefUnit8	= Crossbowman
+		RaidUnitsBase	= 250
+		RaidUnitsRandom	= 100
+		RaidUnit1	= Crossbowman
+		RaidUnit2	= Crossbowman
+		RaidUnit3	= Crossbowman
+		RaidUnit4	= Crossbowman
+		RaidUnit5	= Crossbowman
+		RaidUnit6	= Crossbowman
+		RaidUnit7	= None
+		RaidUnit8	= None
+		HarassingSiegeEngine1	= Catapult
+		HarassingSiegeEngine2	= FireBallista
+		HarassingSiegeEngine3	= FireBallista
+		HarassingSiegeEngine4	= None
+		HarassingSiegeEngine5	= None
+		HarassingSiegeEngine6	= None
+		HarassingSiegeEngine7	= None
+		HarassingSiegeEngine8	= None
+		HarassingSiegeEnginesMax	= 9
+		Unknown124	= 4
+		AttForceBase	= 500
+		AttForceRandom	= 50
+		AttForceSupportAllyThreshold	= 50
+		AttForceRallyPercentage	= 50
+		Unknown129	= 100
+		Unknown130	= 5
+		Unknown131	= 8
+		Unknown132	= 50
+		SiegeEngine1	= Shield
+		SiegeEngine2	= Shield
+		SiegeEngine3	= SiegeTower
+		SiegeEngine4	= SiegeTower
+		SiegeEngine5	= SiegeTower
+		SiegeEngine6	= SiegeTower
+		SiegeEngine7	= SiegeTower
+		SiegeEngine8	= SiegeTower
+		CowThrowInterval	= 6
+		Unknown142	= 0
+		AttMaxEngineers	= 28
+		AttDiggingUnit	= Engineer
+		AttDiggingUnitMax	= 22
+		AttUnit2	= None
+		AttUnit2Max	= 0
+		AttMaxAssassins	= 500
+		AttMaxLaddermen	= 0
+		AttMaxTunnelers	= 0
+		AttUnitPatrol	= Crossbowman
+		AttUnitPatrolMax	= 9999
+		AttUnitPatrolGroupsCount	= 0
+		AttUnitBackup	= ArabArcher
+		AttUnitBackupMax	= 100
+		RangedBackupGroupsCount	= 2
+		AttUnitEngage	= Assassin
+		AttUnitEngageMax	= 50
+		AttUnitSiegeDef	= None
+		AttUnitSiegeDefMax	= 0
+		Unknown161	= 1
+		AttUnitMain1	= Crossbowman
+		AttUnitMain2	= None
+		AttUnitMain3	= None
+		AttUnitMain4	= None
+		AttMaxDefault	= 200
+		AttMainGroupsCount	= 3
+		TargetChoice	= Player
+	}
+}
 
 //Marksman AI
+/*
 AICharacter
 {
 	Index	= 2
@@ -255,7 +436,7 @@ AICharacter
 		SellResource06	= Beer
 		SellResource07	= Flour
 		SellResource08	= None
-		SellResource09	= None
+		SellResource09	= Bows
 		SellResource10	= Spears
 		SellResource11	= Pikes
 		SellResource12	= None
@@ -364,7 +545,7 @@ AICharacter
 		AttMainGroupsCount	= 3
 		TargetChoice	= Player
 	}
-}
+} */
 
 //Khan AI
 AICharacter
@@ -2200,7 +2381,7 @@ AICharacter
 		MaxFood	= 28
 		MinimumApples	= -1
 		MinimumCheese	= -1
-		MinimumBread	= 25
+		MinimumBread	= 5
 		MinimumWheat	= 10
 		MinimumHop	= -1
 		TradeAmountFood	= 1
