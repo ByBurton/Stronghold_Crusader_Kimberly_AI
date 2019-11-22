@@ -441,7 +441,7 @@ AICharacter
 		SellResource13	= Swords
 		SellResource14	= LeatherArmors
 		SellResource15	= IronArmors
-		DefWallPatrolRallyTime	= 20
+		DefWallPatrolRallyTime	= 10
 		DefWallPatrolGroups	= 2
 		DefSiegeEngineGoldThreshold	= 200
 		DefSiegeEngineBuildDelay	= 20
