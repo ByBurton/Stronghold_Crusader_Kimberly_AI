@@ -3150,7 +3150,7 @@ AICharacter
 		DefDiggingUnit	= EuropArcher
 		RecruitInterval	= 2
 		RecruitIntervalWeak	= 1
-		RecruitIntervalStrong	= 0
+		RecruitIntervalStrong	= 2
 		DefTotal	= 280
 		OuterPatrolGroupsCount	= 4
 		OuterPatrolGroupsMove	= True
