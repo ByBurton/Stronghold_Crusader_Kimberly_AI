@@ -191,7 +191,7 @@ AICharacter
 AICharacter
 {
 	Index	= 1
-	Name	= Rat
+	Name	= Knave
 	Personality
 	{
 		Unknown000	= 12

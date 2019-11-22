@@ -631,14 +631,14 @@ AICharacter
 		RecruitProbDefWeak	= 75
 		RecruitProbDefStrong	= 40
 		RecruitProbRaidDefault	= 10
-		RecruitProbRaidWeak	= 20
-		RecruitProbRaidStrong	= 20
-		RecruitProbAttackDefault	= 20
-		RecruitProbAttackWeak	= 5
-		RecruitProbAttackStrong	= 40
+		RecruitProbRaidWeak	= 15
+		RecruitProbRaidStrong	= 15
+		RecruitProbAttackDefault	= 25
+		RecruitProbAttackWeak	= 10
+		RecruitProbAttackStrong	= 45
 		SortieUnitRangedMin	= 15
 		SortieUnitRanged	= Crossbowman
-		SortieUnitMeleeMin	= 100
+		SortieUnitMeleeMin	= 25
 		SortieUnitMelee	= Crossbowman
 		DefDiggingUnitMax	= 25
 		DefDiggingUnit	= Engineer
@@ -649,7 +649,7 @@ AICharacter
 		OuterPatrolGroupsCount	= 4
 		OuterPatrolGroupsMove	= True
 		OuterPatrolRallyDelay	= 5
-		DefWalls	= 400
+		DefWalls	= 600
 		DefUnit1	= Crossbowman
 		DefUnit2	= Crossbowman
 		DefUnit3	= Crossbowman
@@ -721,11 +721,11 @@ AICharacter
 		AttUnitMain4	= None
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 3
-		TargetChoice	= Player
+		TargetChoice	= Closest
 	}
 }
 
-//(Upgraded) Pig AI
+//Pig AI
 AICharacter
 {
 	Index	= 3
@@ -824,11 +824,11 @@ AICharacter
 		RecruitInterval	= 4
 		RecruitIntervalWeak	= 4
 		RecruitIntervalStrong	= 2
-		DefTotal	= 100
+		DefTotal	= 200
 		OuterPatrolGroupsCount	= 2
 		OuterPatrolGroupsMove	= True
 		OuterPatrolRallyDelay	= 20
-		DefWalls	= 80
+		DefWalls	= 160
 		DefUnit1	= Crossbowman
 		DefUnit2	= Crossbowman
 		DefUnit3	= EuropArcher
@@ -918,7 +918,7 @@ AICharacter
 		Unknown004	= 1
 		Unknown005	= 0
 		CriticalPopularity	= 5000
-		LowestPopularity	= 8000
+		LowestPopularity	= 7000
 		HighestPopularity	= 10000
 		TaxesMin	= 0
 		TaxesMax	= 12
@@ -942,10 +942,10 @@ AICharacter
 		MaxPitchrigs	= 4
 		MaxFarms	= 10
 		BuildInterval	= 1
-		ResourceRebuildDelay	= 20
-		MaxFood	= 75
+		ResourceRebuildDelay	= 12
+		MaxFood	= 245
 		MinimumApples	= -1
-		MinimumCheese	= 25
+		MinimumCheese	= 75
 		MinimumBread	= -1
 		MinimumWheat	= -1
 		MinimumHop	= 15
@@ -985,18 +985,18 @@ AICharacter
 		DefSiegeEngineBuildDelay	= 2
 		Unknown072	= 100
 		Unknown073	= 20
-		RecruitProbDefDefault	= 40
-		RecruitProbDefWeak	= 100
-		RecruitProbDefStrong	= 30
-		RecruitProbRaidDefault	= 30
-		RecruitProbRaidWeak	= 0
-		RecruitProbRaidStrong	= 10
-		RecruitProbAttackDefault	= 30
-		RecruitProbAttackWeak	= 0
-		RecruitProbAttackStrong	= 60
+		RecruitProbDefDefault	= 25
+		RecruitProbDefWeak	= 50
+		RecruitProbDefStrong	= 10
+		RecruitProbRaidDefault	= 35
+		RecruitProbRaidWeak	= 25
+		RecruitProbRaidStrong	= 20
+		RecruitProbAttackDefault	= 40
+		RecruitProbAttackWeak	= 25
+		RecruitProbAttackStrong	= 70
 		SortieUnitRangedMin	= 25
 		SortieUnitRanged	= Crossbowman
-		SortieUnitMeleeMin	= 175
+		SortieUnitMeleeMin	= 75
 		SortieUnitMelee	= Swordsman
 		DefDiggingUnitMax	= 5
 		DefDiggingUnit	= Pikeman
@@ -1016,7 +1016,7 @@ AICharacter
 		DefUnit6	= Swordsman
 		DefUnit7	= ArabSwordsman
 		DefUnit8	= Crossbowman
-		RaidUnitsBase	= 200
+		RaidUnitsBase	= 300
 		RaidUnitsRandom	= 50
 		RaidUnit1	= Crossbowman
 		RaidUnit2	= ArabSwordsman
@@ -1096,9 +1096,9 @@ AICharacter
 		Unknown003	= 0
 		Unknown004	= 0
 		Unknown005	= 0
-		CriticalPopularity	= 4000
-		LowestPopularity	= 5000
-		HighestPopularity	= 6600
+		CriticalPopularity	= 3500
+		LowestPopularity	= 4500
+		HighestPopularity	= 10000
 		TaxesMin	= 0
 		TaxesMax	= 4
 		Unknown011	= 20
@@ -1354,7 +1354,7 @@ AICharacter
 		RecruitProbAttackStrong	= 20
 		SortieUnitRangedMin	= 3
 		SortieUnitRanged	= FireThrower
-		SortieUnitMeleeMin	= 28
+		SortieUnitMeleeMin	= 18
 		SortieUnitMelee	= FireThrower
 		DefDiggingUnitMax	= 0
 		DefDiggingUnit	= Slave
@@ -1813,8 +1813,8 @@ AICharacter
 		Unknown004	= 1
 		Unknown005	= 1
 		CriticalPopularity	= 5000
-		LowestPopularity	= 9500
-		HighestPopularity	= 9800
+		LowestPopularity	= 9100
+		HighestPopularity	= 9700
 		TaxesMin	= 1
 		TaxesMax	= 10
 		Unknown011	= 12
@@ -2099,7 +2099,7 @@ AICharacter
 		RaidUnit5	= HorseArcher
 		RaidUnit6	= HorseArcher
 		RaidUnit7	= HorseArcher
-		RaidUnit8	= HorseArcher
+		RaidUnit8	= None
 		HarassingSiegeEngine1	= FireBallista
 		HarassingSiegeEngine2	= Catapult
 		HarassingSiegeEngine3	= None
@@ -2171,7 +2171,7 @@ AICharacter
 		Unknown004	= 1
 		Unknown005	= 1
 		CriticalPopularity	= 5000
-		LowestPopularity	= 5800
+		LowestPopularity	= 9000
 		HighestPopularity	= 10000
 		TaxesMin	= 2
 		TaxesMax	= 12
@@ -2332,7 +2332,7 @@ AICharacter
 		AttUnitMain4	= None
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 2
-		TargetChoice	= Player
+		TargetChoice	= Closest
 	}
 }
 
@@ -2433,8 +2433,8 @@ AICharacter
 		DefDiggingUnitMax	= 12
 		DefDiggingUnit	= Slave
 		RecruitInterval	= 1
-		RecruitIntervalWeak	= 1
-		RecruitIntervalStrong	= 1
+		RecruitIntervalWeak	= 2
+		RecruitIntervalStrong	= 2
 		DefTotal	= 750
 		OuterPatrolGroupsCount	= 5
 		OuterPatrolGroupsMove	= True
@@ -2508,7 +2508,7 @@ AICharacter
 		AttUnitMain1	= Spearman
 		AttUnitMain2	= ArabSwordsman
 		AttUnitMain3	= ArabSwordsman
-		AttUnitMain4	= ArabSwordsman
+		AttUnitMain4	= None
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 2
 		TargetChoice	= Balanced
@@ -2529,9 +2529,9 @@ AICharacter
 		Unknown004	= 1
 		Unknown005	= 1
 		CriticalPopularity	= 5000
-		LowestPopularity	= 8000
+		LowestPopularity	= 8500
 		HighestPopularity	= 10000
-		TaxesMin	= 2
+		TaxesMin	= 3
 		TaxesMax	= 12
 		Unknown011	= 10
 		Farm1	= WheatFarm
@@ -2591,7 +2591,7 @@ AICharacter
 		SellResource14	= LeatherArmors
 		SellResource15	= IronArmors
 		DefWallPatrolRallyTime	= 3
-		DefWallPatrolGroups	= 10
+		DefWallPatrolGroups	= 5
 		DefSiegeEngineGoldThreshold	= -100
 		DefSiegeEngineBuildDelay	= 4
 		Unknown072	= 200
@@ -2690,7 +2690,7 @@ AICharacter
 		AttUnitMain4	= None
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 4
-		TargetChoice	= Player
+		TargetChoice	= Closest
 	}
 }
 
@@ -2731,7 +2731,7 @@ AICharacter
 		MaxWoodcutters	= 6
 		MaxPitchrigs	= 1
 		MaxFarms	= 13
-		BuildInterval	= 6
+		BuildInterval	= 7
 		ResourceRebuildDelay	= 20
 		MaxFood	= 100
 		MinimumApples	= 10
@@ -2775,12 +2775,12 @@ AICharacter
 		DefSiegeEngineBuildDelay	= 2
 		Unknown072	= 100
 		Unknown073	= 20
-		RecruitProbDefDefault	= 80
-		RecruitProbDefWeak	= 100
-		RecruitProbDefStrong	= 60
-		RecruitProbRaidDefault	= 0
-		RecruitProbRaidWeak	= 0
-		RecruitProbRaidStrong	= 0
+		RecruitProbDefDefault	= 75
+		RecruitProbDefWeak	= 95
+		RecruitProbDefStrong	= 55
+		RecruitProbRaidDefault	= 5
+		RecruitProbRaidWeak	= 5
+		RecruitProbRaidStrong	= 5
 		RecruitProbAttackDefault	= 20
 		RecruitProbAttackWeak	= 0
 		RecruitProbAttackStrong	= 40
@@ -2806,11 +2806,11 @@ AICharacter
 		DefUnit6	= Crossbowman
 		DefUnit7	= Crossbowman
 		DefUnit8	= Pikeman
-		RaidUnitsBase	= 0
-		RaidUnitsRandom	= 0
-		RaidUnit1	= None
-		RaidUnit2	= None
-		RaidUnit3	= None
+		RaidUnitsBase	= 75
+		RaidUnitsRandom	= 25
+		RaidUnit1	= Crossbowman
+		RaidUnit2	= Pikeman
+		RaidUnit3	= Pikeman
 		RaidUnit4	= None
 		RaidUnit5	= None
 		RaidUnit6	= None
@@ -2873,7 +2873,7 @@ AICharacter
 	}
 }
 
-//Queen of Alarien AI
+//Queen of Alarien
 AICharacter
 {
 	Index	= 15
@@ -2932,7 +2932,7 @@ AICharacter
 		RecruitGoldThreshold	= 400
 		BlacksmithSetting	= Swords
 		FletcherSetting	= Crossbows
-		PoleturnerSetting	= Pikes
+		PoleturnerSetting	= Both
 		SellResource01	= None
 		SellResource02	= None
 		SellResource03	= None
@@ -2942,13 +2942,13 @@ AICharacter
 		SellResource07	= Flour
 		SellResource08	= None
 		SellResource09	= None
-		SellResource10	= Spears
+		SellResource10	= None
 		SellResource11	= None
 		SellResource12	= None
 		SellResource13	= None
 		SellResource14	= None
 		SellResource15	= None
-		DefWallPatrolRallyTime	= 8
+		DefWallPatrolRallyTime	= 16
 		DefWallPatrolGroups	= 4
 		DefSiegeEngineGoldThreshold	= -120
 		DefSiegeEngineBuildDelay	= 8
@@ -2982,13 +2982,13 @@ AICharacter
 		DefUnit3	= EuropArcher
 		DefUnit4	= Crossbowman
 		DefUnit5	= ArabArcher
-		DefUnit6	= Pikeman
-		DefUnit7	= Swordsman
+		DefUnit6	= Spearman
+		DefUnit7	= Spearman
 		DefUnit8	= Crossbowman
 		RaidUnitsBase	= 75
 		RaidUnitsRandom	= 150
 		RaidUnit1	= Pikeman
-		RaidUnit2	= Pikeman
+		RaidUnit2	= Spearman
 		RaidUnit3	= Crossbowman
 		RaidUnit4	= None
 		RaidUnit5	= None
@@ -3044,8 +3044,8 @@ AICharacter
 		Unknown161	= 1
 		AttUnitMain1	= Swordsman
 		AttUnitMain2	= Pikeman
-		AttUnitMain3	= None
-		AttUnitMain4	= None
+		AttUnitMain3	= Spearman
+		AttUnitMain4	= Spearman
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 1
 		TargetChoice	= Closest

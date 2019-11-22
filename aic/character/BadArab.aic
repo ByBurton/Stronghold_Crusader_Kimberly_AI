@@ -190,7 +190,7 @@ AICharacter
 AICharacter
 {
 	Index	= 11
-	Name	= Wazir
+	Name	= BadArab
 	Personality
 	{
 		Unknown000	= 10
@@ -200,7 +200,7 @@ AICharacter
 		Unknown004	= 1
 		Unknown005	= 1
 		CriticalPopularity	= 5000
-		LowestPopularity	= 5800
+		LowestPopularity	= 9000
 		HighestPopularity	= 10000
 		TaxesMin	= 2
 		TaxesMax	= 12
@@ -361,6 +361,6 @@ AICharacter
 		AttUnitMain4	= None
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 2
-		TargetChoice	= Player
+		TargetChoice	= Closest
 	}
 }

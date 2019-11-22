@@ -1,7 +1,8 @@
+//Truchsess AI
 AICharacter
 {
 	Index	= 9
-	Name	= Frederick
+	Name	= Truchsess
 	Personality
 	{
 		Unknown000	= 13
@@ -11,8 +12,8 @@ AICharacter
 		Unknown004	= 1
 		Unknown005	= 1
 		CriticalPopularity	= 5000
-		LowestPopularity	= 9500
-		HighestPopularity	= 9800
+		LowestPopularity	= 9100
+		HighestPopularity	= 9700
 		TaxesMin	= 1
 		TaxesMax	= 10
 		Unknown011	= 12

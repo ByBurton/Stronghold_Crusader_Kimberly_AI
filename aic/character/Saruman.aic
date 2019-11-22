@@ -190,7 +190,7 @@ AICharacter
 AICharacter
 {
 	Index	= 4
-	Name	= Wolf
+	Name	= Saruman
 	Personality
 	{
 		Unknown000	= 13
@@ -200,7 +200,7 @@ AICharacter
 		Unknown004	= 1
 		Unknown005	= 0
 		CriticalPopularity	= 5000
-		LowestPopularity	= 8000
+		LowestPopularity	= 7000
 		HighestPopularity	= 10000
 		TaxesMin	= 0
 		TaxesMax	= 12
@@ -224,10 +224,10 @@ AICharacter
 		MaxPitchrigs	= 4
 		MaxFarms	= 10
 		BuildInterval	= 1
-		ResourceRebuildDelay	= 20
-		MaxFood	= 75
+		ResourceRebuildDelay	= 12
+		MaxFood	= 245
 		MinimumApples	= -1
-		MinimumCheese	= 25
+		MinimumCheese	= 75
 		MinimumBread	= -1
 		MinimumWheat	= -1
 		MinimumHop	= 15
@@ -267,18 +267,18 @@ AICharacter
 		DefSiegeEngineBuildDelay	= 2
 		Unknown072	= 100
 		Unknown073	= 20
-		RecruitProbDefDefault	= 40
-		RecruitProbDefWeak	= 100
-		RecruitProbDefStrong	= 30
-		RecruitProbRaidDefault	= 30
-		RecruitProbRaidWeak	= 0
-		RecruitProbRaidStrong	= 10
-		RecruitProbAttackDefault	= 30
-		RecruitProbAttackWeak	= 0
-		RecruitProbAttackStrong	= 60
+		RecruitProbDefDefault	= 25
+		RecruitProbDefWeak	= 50
+		RecruitProbDefStrong	= 10
+		RecruitProbRaidDefault	= 35
+		RecruitProbRaidWeak	= 25
+		RecruitProbRaidStrong	= 20
+		RecruitProbAttackDefault	= 40
+		RecruitProbAttackWeak	= 25
+		RecruitProbAttackStrong	= 70
 		SortieUnitRangedMin	= 25
 		SortieUnitRanged	= Crossbowman
-		SortieUnitMeleeMin	= 175
+		SortieUnitMeleeMin	= 75
 		SortieUnitMelee	= Swordsman
 		DefDiggingUnitMax	= 5
 		DefDiggingUnit	= Pikeman
@@ -298,7 +298,7 @@ AICharacter
 		DefUnit6	= Swordsman
 		DefUnit7	= ArabSwordsman
 		DefUnit8	= Crossbowman
-		RaidUnitsBase	= 200
+		RaidUnitsBase	= 300
 		RaidUnitsRandom	= 50
 		RaidUnit1	= Crossbowman
 		RaidUnit2	= ArabSwordsman

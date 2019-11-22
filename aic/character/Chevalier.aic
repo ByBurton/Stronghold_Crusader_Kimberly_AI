@@ -186,11 +186,11 @@ AICharacter
 }
 */
 
-
+//Chevalier AI
 AICharacter
 {
 	Index	= 14
-	Name	= Sheriff
+	Name	= Chevalier
 	Personality
 	{
 		Unknown000	= 13
@@ -223,7 +223,7 @@ AICharacter
 		MaxWoodcutters	= 6
 		MaxPitchrigs	= 1
 		MaxFarms	= 13
-		BuildInterval	= 6
+		BuildInterval	= 7
 		ResourceRebuildDelay	= 20
 		MaxFood	= 100
 		MinimumApples	= 10
@@ -267,12 +267,12 @@ AICharacter
 		DefSiegeEngineBuildDelay	= 2
 		Unknown072	= 100
 		Unknown073	= 20
-		RecruitProbDefDefault	= 80
-		RecruitProbDefWeak	= 100
-		RecruitProbDefStrong	= 60
-		RecruitProbRaidDefault	= 0
-		RecruitProbRaidWeak	= 0
-		RecruitProbRaidStrong	= 0
+		RecruitProbDefDefault	= 75
+		RecruitProbDefWeak	= 95
+		RecruitProbDefStrong	= 55
+		RecruitProbRaidDefault	= 5
+		RecruitProbRaidWeak	= 5
+		RecruitProbRaidStrong	= 5
 		RecruitProbAttackDefault	= 20
 		RecruitProbAttackWeak	= 0
 		RecruitProbAttackStrong	= 40
@@ -298,11 +298,11 @@ AICharacter
 		DefUnit6	= Crossbowman
 		DefUnit7	= Crossbowman
 		DefUnit8	= Pikeman
-		RaidUnitsBase	= 0
-		RaidUnitsRandom	= 0
-		RaidUnit1	= None
-		RaidUnit2	= None
-		RaidUnit3	= None
+		RaidUnitsBase	= 75
+		RaidUnitsRandom	= 25
+		RaidUnit1	= Crossbowman
+		RaidUnit2	= Pikeman
+		RaidUnit3	= Pikeman
 		RaidUnit4	= None
 		RaidUnit5	= None
 		RaidUnit6	= None

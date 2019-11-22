@@ -191,7 +191,7 @@ AICharacter
 AICharacter
 {
 	Index	= 5
-	Name	= Saladin
+	Name	= SlaveKing
 	Personality
 	{
 		Unknown000	= 10
@@ -200,9 +200,9 @@ AICharacter
 		Unknown003	= 0
 		Unknown004	= 0
 		Unknown005	= 0
-		CriticalPopularity	= 4000
-		LowestPopularity	= 5000
-		HighestPopularity	= 6600
+		CriticalPopularity	= 3500
+		LowestPopularity	= 4500
+		HighestPopularity	= 10000
 		TaxesMin	= 0
 		TaxesMax	= 4
 		Unknown011	= 20

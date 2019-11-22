@@ -186,10 +186,11 @@ AICharacter
 }
 */
 
+//Queen of Alarien
 AICharacter
 {
 	Index	= 15
-	Name	= Marshal
+	Name	= QueenOfAlarien
 	Personality
 	{
 		Unknown000	= 10
@@ -244,7 +245,7 @@ AICharacter
 		RecruitGoldThreshold	= 400
 		BlacksmithSetting	= Swords
 		FletcherSetting	= Crossbows
-		PoleturnerSetting	= Pikes
+		PoleturnerSetting	= Both
 		SellResource01	= None
 		SellResource02	= None
 		SellResource03	= None
@@ -254,13 +255,13 @@ AICharacter
 		SellResource07	= Flour
 		SellResource08	= None
 		SellResource09	= None
-		SellResource10	= Spears
+		SellResource10	= None
 		SellResource11	= None
 		SellResource12	= None
 		SellResource13	= None
 		SellResource14	= None
 		SellResource15	= None
-		DefWallPatrolRallyTime	= 8
+		DefWallPatrolRallyTime	= 16
 		DefWallPatrolGroups	= 4
 		DefSiegeEngineGoldThreshold	= -120
 		DefSiegeEngineBuildDelay	= 8
@@ -294,13 +295,13 @@ AICharacter
 		DefUnit3	= EuropArcher
 		DefUnit4	= Crossbowman
 		DefUnit5	= ArabArcher
-		DefUnit6	= Pikeman
-		DefUnit7	= Swordsman
+		DefUnit6	= Spearman
+		DefUnit7	= Spearman
 		DefUnit8	= Crossbowman
 		RaidUnitsBase	= 75
 		RaidUnitsRandom	= 150
 		RaidUnit1	= Pikeman
-		RaidUnit2	= Pikeman
+		RaidUnit2	= Spearman
 		RaidUnit3	= Crossbowman
 		RaidUnit4	= None
 		RaidUnit5	= None
@@ -356,11 +357,10 @@ AICharacter
 		Unknown161	= 1
 		AttUnitMain1	= Swordsman
 		AttUnitMain2	= Pikeman
-		AttUnitMain3	= None
-		AttUnitMain4	= None
+		AttUnitMain3	= Spearman
+		AttUnitMain4	= Spearman
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 1
 		TargetChoice	= Closest
 	}
 }
-

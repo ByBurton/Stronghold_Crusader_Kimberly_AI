@@ -186,10 +186,11 @@ AICharacter
 }
 */
 
+//Yin & Yang AI
 AICharacter
 {
 	Index	= 10
-	Name	= Philipp
+	Name	= YinYang
 	Personality
 	{
 		Unknown000	= 13
@@ -306,7 +307,7 @@ AICharacter
 		RaidUnit5	= HorseArcher
 		RaidUnit6	= HorseArcher
 		RaidUnit7	= HorseArcher
-		RaidUnit8	= HorseArcher
+		RaidUnit8	= None
 		HarassingSiegeEngine1	= FireBallista
 		HarassingSiegeEngine2	= Catapult
 		HarassingSiegeEngine3	= None
@@ -363,4 +364,3 @@ AICharacter
 		TargetChoice	= Closest
 	}
 }
-
