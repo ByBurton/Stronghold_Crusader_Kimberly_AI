@@ -1083,11 +1083,11 @@ AICharacter
 	}
 }
 
-//Slave King AI
+//Enslaver AI
 AICharacter
 {
 	Index	= 5
-	Name	= SlaveKing
+	Name	= Enslaver
 	Personality
 	{
 		Unknown000	= 10
@@ -1194,7 +1194,7 @@ AICharacter
 		DefUnit5	= Slave
 		DefUnit6	= Slave
 		DefUnit7	= Slave
-		DefUnit8	= Slave
+		DefUnit8	= ArabSwordsman
 		RaidUnitsBase	= 10
 		RaidUnitsRandom	= 5
 		RaidUnit1	= Slave
