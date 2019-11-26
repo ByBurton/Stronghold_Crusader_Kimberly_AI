@@ -144,7 +144,7 @@ AICharacter
 		AttForceRallyPercentage:	Int32,	The %-amount of units of the attack force that the AI will rally before attacking. (0 - 100)
 		Unknown129:	Int32
 		Unknown130:	Int32
-		Unknown131:	Int32
+		AttUnitPatrolRecommandDelay:	Int32,	The delay that the AI waits until the AttUnitPatrol get a new attack-move order.
 		Unknown132:	Int32
 		SiegeEngine1:	SiegeEngine
 		SiegeEngine2:	SiegeEngine
@@ -169,12 +169,12 @@ AICharacter
 		AttUnitPatrolGroupsCount:	Int32,	# of groups the AttUnitPatrol split into. BUGGY! More than 1 group results to only a single group attacking, the others standing idle.
 		AttUnitBackup:	Unit,	Attacking unit that holds position and doesn't attack until the walls are breached.
 		AttUnitBackupMax:	Int32
-		RangedBackupGroupsCount:	Int32,	# of groups the RangedBackupUnits split into. If shields are present in the army, one will be added to each group (if possible).
+		AttUnitBackupGroupsCount:	Int32,	# of groups the AttUnitBackup split into. If shields are present in the army, one will be added to each group (if possible).
 		AttUnitEngage:	Unit,	Units that engage enemy groups of units outside the castle. Prioritizes larger groups no matter where they are on the map. Otherwise destroys buildings outside the castle.
 		AttUnitEngageMax:	Int32
 		AttUnitSiegeDef:	Unit,	These units patrol between siege engines in order to protect them.
 		AttUnitSiegeDefMax:	Int32
-		Unknown161:	Int32
+		AttUnitSiegeDefGroupsCount:	Int32
 		AttUnitMain1:	Unit,	AttUntiMain1 to AttUnitMain4 is a list of the main strike force the AI recruits for sieges. Priotizes in order of the list, but only recruits units for which they have enough gold. So try to place expensive units higher up.
 		AttUnitMain2:	Unit
 		AttUnitMain3:	Unit
@@ -186,8 +186,6 @@ AICharacter
 }
 */
 
-
-//Enslaver AI
 AICharacter
 {
 	Index	= 5
@@ -325,7 +323,7 @@ AICharacter
 		AttForceRallyPercentage	= 5
 		Unknown129	= 100
 		Unknown130	= 4
-		Unknown131	= 1
+		AttUnitPatrolRecommandDelay	= 1
 		Unknown132	= 60
 		SiegeEngine1	= None
 		SiegeEngine2	= None
@@ -350,12 +348,12 @@ AICharacter
 		AttUnitPatrolGroupsCount	= 1
 		AttUnitBackup	= None
 		AttUnitBackupMax	= 0
-		RangedBackupGroupsCount	= 1
+		AttUnitBackupGroupsCount	= 1
 		AttUnitEngage	= Slinger
 		AttUnitEngageMax	= 500
 		AttUnitSiegeDef	= Slave
 		AttUnitSiegeDefMax	= 100
-		Unknown161	= 1
+		AttUnitSiegeDefGroupsCount	= 1
 		AttUnitMain1	= Slave
 		AttUnitMain2	= None
 		AttUnitMain3	= None
@@ -365,3 +363,4 @@ AICharacter
 		TargetChoice	= Balanced
 	}
 }
+
