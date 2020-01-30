@@ -32,7 +32,7 @@ AICharacter
 		MaxQuarries	= 7
 		MaxIronmines	= 9
 		MaxWoodcutters	= 5
-		MaxPitchrigs	= 10
+		MaxPitchrigs	= 13
 		MaxFarms	= 15
 		BuildInterval	= 1
 		ResourceRebuildDelay	= 18
@@ -72,7 +72,7 @@ AICharacter
 		SellResource13	= Swords
 		SellResource14	= None
 		SellResource15	= None
-		DefWallPatrolRallyTime	= 8
+		DefWallPatrolRallyTime	= 10
 		DefWallPatrolGroups	= 10
 		DefSiegeEngineGoldThreshold	= 1150
 		DefSiegeEngineBuildDelay	= 5
@@ -92,15 +92,15 @@ AICharacter
 		SortieUnitMeleeMin	= 9
 		SortieUnitMelee	= Pikeman
 		DefDiggingUnitMax	= 0
-		DefDiggingUnit	= Slave
+		DefDiggingUnit	= None
 		RecruitInterval	= 1
 		RecruitIntervalWeak	= 1
 		RecruitIntervalStrong	= 1
-		DefTotal	= 165
+		DefTotal	= 175
 		OuterPatrolGroupsCount	= 1
 		OuterPatrolGroupsMove	= True
 		OuterPatrolRallyDelay	= 20
-		DefWalls	= 145
+		DefWalls	= 155
 		DefUnit1	= ArabArcher
 		DefUnit2	= Crossbowman
 		DefUnit3	= Crossbowman
@@ -131,7 +131,7 @@ AICharacter
 		Unknown124	= 4
 		AttForceBase	= 212
 		AttForceRandom	= 24
-		AttForceSupportAllyThreshold	= 60
+		AttForceSupportAllyThreshold	= 212
 		AttForceRallyPercentage	= 46
 		Unknown129	= 60
 		Unknown130	= 2
@@ -153,7 +153,7 @@ AICharacter
 		AttUnit2	= FireThrower
 		AttUnit2Max	= 125
 		AttMaxAssassins	= 20
-		AttMaxLaddermen	= 0
+		AttMaxLaddermen	= 5
 		AttMaxTunnelers	= 0
 		AttUnitPatrol	= ArabArcher
 		AttUnitPatrolMax	= 125
