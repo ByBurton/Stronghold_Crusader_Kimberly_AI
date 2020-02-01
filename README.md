@@ -15,4 +15,4 @@ All 16 vanilla AIs can now be overwritten with my AIs, but I still have a lot of
 
 
 
-Special thanks to Krarilotus and Hacksülze for their huge support <3 !!!
+Special thanks to Krarilotus, heroesflorian and Hacksülze for their huge support <3 !!!
