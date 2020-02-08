@@ -96,11 +96,11 @@ AICharacter
 		RecruitInterval	= 1
 		RecruitIntervalWeak	= 1
 		RecruitIntervalStrong	= 1
-		DefTotal	= 175
+		DefTotal	= 275
 		OuterPatrolGroupsCount	= 1
 		OuterPatrolGroupsMove	= True
 		OuterPatrolRallyDelay	= 20
-		DefWalls	= 155
+		DefWalls	= 255
 		DefUnit1	= ArabArcher
 		DefUnit2	= Crossbowman
 		DefUnit3	= Crossbowman
