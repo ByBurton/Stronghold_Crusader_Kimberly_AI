@@ -96,11 +96,11 @@ AICharacter
 		RecruitInterval	= 1
 		RecruitIntervalWeak	= 1
 		RecruitIntervalStrong	= 1
-		DefTotal	= 275
+		DefTotal	= 333
 		OuterPatrolGroupsCount	= 1
 		OuterPatrolGroupsMove	= True
 		OuterPatrolRallyDelay	= 20
-		DefWalls	= 255
+		DefWalls	= 300
 		DefUnit1	= ArabArcher
 		DefUnit2	= Crossbowman
 		DefUnit3	= Crossbowman
@@ -127,7 +127,7 @@ AICharacter
 		HarassingSiegeEngine6	= None
 		HarassingSiegeEngine7	= None
 		HarassingSiegeEngine8	= None
-		HarassingSiegeEnginesMax	= 8
+		HarassingSiegeEnginesMax	= 10
 		Unknown124	= 4
 		AttForceBase	= 212
 		AttForceRandom	= 24
@@ -172,6 +172,6 @@ AICharacter
 		AttUnitMain4	= Spearman
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 2
-		TargetChoice	= Closest
+		TargetChoice	= Balanced
 	}
 }
