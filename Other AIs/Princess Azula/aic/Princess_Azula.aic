@@ -12,7 +12,7 @@ AICharacter
 		Unknown005	= 1
 		CriticalPopularity	= 5700
 		LowestPopularity	= 9200
-		HighestPopularity	= 9700
+		HighestPopularity	= 10000
 		TaxesMin	= 1
 		TaxesMax	= 11
 		Unknown011	= 40
@@ -30,10 +30,10 @@ AICharacter
 		PopulationPerIronmine	= 12
 		PopulationPerPitchrig	= 10
 		MaxQuarries	= 7
-		MaxIronmines	= 9
+		MaxIronmines	= 10
 		MaxWoodcutters	= 5
-		MaxPitchrigs	= 13
-		MaxFarms	= 15
+		MaxPitchrigs	= 14
+		MaxFarms	= 16
 		BuildInterval	= 1
 		ResourceRebuildDelay	= 18
 		MaxFood	= 80
@@ -81,12 +81,12 @@ AICharacter
 		RecruitProbDefDefault	= 56
 		RecruitProbDefWeak	= 78
 		RecruitProbDefStrong	= 38
-		RecruitProbRaidDefault	= 35
+		RecruitProbRaidDefault	= 33
 		RecruitProbRaidWeak	= 22
 		RecruitProbRaidStrong	= 12
 		RecruitProbAttackDefault	= 9
 		RecruitProbAttackWeak	= 0
-		RecruitProbAttackStrong	= 50
+		RecruitProbAttackStrong	= 52
 		SortieUnitRangedMin	= 9
 		SortieUnitRanged	= ArabArcher
 		SortieUnitMeleeMin	= 9
@@ -96,11 +96,11 @@ AICharacter
 		RecruitInterval	= 1
 		RecruitIntervalWeak	= 1
 		RecruitIntervalStrong	= 1
-		DefTotal	= 333
+		DefTotal	= 500
 		OuterPatrolGroupsCount	= 1
 		OuterPatrolGroupsMove	= True
 		OuterPatrolRallyDelay	= 20
-		DefWalls	= 300
+		DefWalls	= 400
 		DefUnit1	= ArabArcher
 		DefUnit2	= Crossbowman
 		DefUnit3	= Crossbowman
@@ -166,12 +166,12 @@ AICharacter
 		AttUnitSiegeDef	= FireThrower
 		AttUnitSiegeDefMax	= 25
 		Unknown161	= 5
-		AttUnitMain1	= FireThrower
+		AttUnitMain1	= Spearman
 		AttUnitMain2	= ArabSwordsman
 		AttUnitMain3	= FireThrower
-		AttUnitMain4	= Spearman
+		AttUnitMain4	= FireThrower
 		AttMaxDefault	= 200
 		AttMainGroupsCount	= 2
-		TargetChoice	= Balanced
+		TargetChoice	= Closest
 	}
 }
